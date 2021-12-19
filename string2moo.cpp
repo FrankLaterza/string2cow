@@ -17,16 +17,8 @@ int main() {
     int strLegnth = str.length();
     cout << "strlen is " << strLegnth << "  ";
     for (int i = 0; i < strLegnth; i++) {
-        if (i > 0) {
-            fputs("//move address", fp);
-        }
-
-        for (int k = 0; k < i; k++) {
-            if (!(k % 20)) {
-                fputs("\n", fp);
-            }
-            fputs("moO ", fp);
-        }
+        fputs("//move address", fp);
+        fputs("moO ", fp);
         fputs("\n//char data\n", fp);
         for (int j = 0; j < int(str.at(i)); j++) {
             // if 20 MoO then new line becuase it looks nicer
